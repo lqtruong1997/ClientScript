@@ -1,0 +1,117 @@
+.filter {
+    [class*="MuiPaper-root"] {
+        border-radius: 0.3rem 0.3rem 0 0;
+        padding: 1.5rem;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        bottom: 0;
+        @include breakpoints(XL) {
+            border-radius: 0.3rem;
+            width: 30rem;
+            height: 20.5rem;
+        }
+    }
+    [class*="MuiDialog-scrollPaper"] {
+        @include breakpoints(XL) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        align-items: flex-end;
+    }
+    .header {
+        position: relative;
+        .title {
+            color: $orange;
+            @include centerer;
+            font-size: 1.5rem;
+        }
+        .reset {
+            @extend .action-button;
+            width: auto;
+            &:after {
+                @include breakpoints(XL) {
+                    content: "Reset";
+                }
+                content: "";
+            }
+            @include breakpoints(XL) {
+                width: auto;
+                padding: 0.2rem 1.3rem;
+            }
+            width: auto;
+            min-width: 1rem;
+            padding: 0.2rem;
+        }
+        margin-bottom: 1rem;
+    }
+    .action-button {
+        border-radius: 1.3rem;
+        border-color: $grey-dark;
+        &:focus,
+        &:hover {
+            background-color: $grey-dark;
+            color: $white;
+        }
+    }
+    .start-date {
+        @include breakpoints(XL) {
+            padding-right: 0.6rem;
+            margin-bottom: 1rem;
+        }
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+    .end-date {
+        margin-bottom: 1rem;
+        @include breakpoints(XL) {
+            padding-left: 0.6rem;
+        }
+        padding-left: 0;
+    }
+    .leave-type {
+        margin-bottom: 1.5rem;
+    }
+    .status {
+        margin-bottom: 1.8rem;
+    }
+    .filter-footer {
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        @include breakpoints(XL) {
+            flex-direction: row;
+        }
+        .apply {
+            padding: 0 2.5rem;
+            height: 2.6rem;
+            border-radius: 1.3rem;
+            background-color: $orange;
+            color: $white;
+            border-color: $orange;
+            &:focus {
+                background-color: $orange;
+                color: $white;
+                border-color: $orange;
+            }
+            @include breakpoints(XL) {
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+                width: auto;
+            }
+            margin-right: 0;
+            margin-bottom: 0.8rem;
+            width: 100%;
+        }
+        .close {
+            @extend .action-button;
+            padding: 0 2.5rem;
+            height: 2.6rem;
+            @include breakpoints(XL) {
+                width: auto;
+            }
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.app {
+    background-color: $green-light;
+    padding: 4.5rem 0.7rem;
+}
+.add-request {
+    outline: none;
+    position: fixed;
+    right: 1.5rem;
+    @include breakpoints(XL) {
+        right: calc(1 / 6 * 100% + 1.5rem);
+    }
+    bottom: 3.5rem;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    background-color: $orange;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.8rem;
+    border: none;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus {
+        border: 1px solid $orange;
+        background-color: $white;
+        color: $orange;
+    }
+}
+.filter-request {
+    @extend .add-request;
+    right: 5rem;
+    @include breakpoints(XL) {
+        right: calc(1 / 6 * 100% + 5rem);
+    }
+    &:hover,
+    &:focus {
+        border-color: $orange;
+        background-color: $white;
+        color: $orange;
+    }
+}

@@ -1,0 +1,26 @@
+.request {
+    @extend .holiday;
+    display: flex;
+    flex-direction: row;
+    .content {
+        svg {
+            margin-right: 0.4rem;
+            vertical-align: middle;
+        }
+        .during {
+            font-size: 1.01rem;
+            color: $orange;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            display: inline-block;
+            & > * {
+                vertical-align: middle;
+                display: inline;
+            }
+        }
+        .pending,
+        .annual-leave {
+            margin-bottom: 0.4rem;
+        }
+    }
+}

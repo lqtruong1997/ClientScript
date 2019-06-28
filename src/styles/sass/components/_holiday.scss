@@ -1,0 +1,40 @@
+.holiday {
+    position: relative;
+    .number {
+        color: $orange;
+        margin-right: 0.8rem;
+        width: 5rem;
+        height: 3.7rem;
+        border: solid 1px $grey;
+        border-bottom: none;
+        border-top-left-radius: 0.2rem;
+        border-top-right-radius: 0.2rem;
+        margin-bottom: 0.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .text {
+        margin-top: -0.18rem;
+        height: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        border: solid 1px $grey;
+        border-top: none;
+        background-color: $green-light;
+        border-bottom-left-radius: 0.2rem;
+        border-bottom-right-radius: 0.2rem;
+    }
+    .day {
+        color: $orange;
+        font-weight: bold;
+        svg {
+            margin-right: 0.3rem;
+        }
+        margin-bottom: 0.4rem;
+    }
+}

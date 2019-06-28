@@ -1,0 +1,30 @@
+@import "../abstract/variables";
+
+.login-header {
+    height: 12rem;
+    width: 100%;
+    background-image: url("./images/hr-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoints(XS) {
+        background-size: 100% 100%;
+    }
+    background-size: 100% auto;
+}
+.hr-logo {
+    @include breakpoints(XL) {
+        width: 23.9rem;
+    }
+    width: 15rem;
+}
+.login-body {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    @include breakpoints(XL) {
+        padding-top: 2.4rem;
+    }
+}

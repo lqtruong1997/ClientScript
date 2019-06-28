@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "sourceMap": true,
+        "lib": ["es6", "dom"],
+        "jsx": "react",
+        "types": ["node"],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "skipLibCheck": true
+    }
+}

@@ -1,0 +1,13 @@
+.card {
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+.card-name {
+    font-size: 1.2rem;
+    color: $grey-dark;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}

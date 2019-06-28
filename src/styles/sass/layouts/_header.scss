@@ -1,0 +1,21 @@
+.top-bar {
+    top: 0;
+    left: 0;
+    background-color: $white;
+    height: 3.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    .container {
+        height: 100%;
+    }
+    .app-name {
+        font-weight: bold;
+        font-size: 1.3rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: $orange;
+    }
+}

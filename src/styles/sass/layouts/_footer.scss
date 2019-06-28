@@ -1,0 +1,20 @@
+.footer {
+    background-color: $green-light;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    .footer-bar {
+        background-color: $white;
+    }
+    .nav-bar {
+        [class*="MuiBottomNavigationAction-label"] {
+            @include breakpoints(XL) {
+                display: block;
+            }
+            display: none;
+        }
+        [class*="MuiBottomNavigationAction-selected"] {
+            color: $orange;
+        }
+    }
+}

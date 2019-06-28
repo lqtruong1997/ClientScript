@@ -1,0 +1,26 @@
+.group {
+    color: $grey-dark;
+    .logo {
+        font-size: 1.9rem;
+    }
+    .detail {
+        margin-left: 0.6rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+        background-color: $green-light;
+        .icon {
+            margin-right: 0.4rem;
+            margin-top: -0.2rem;
+        }
+        .name {
+            color: $orange;
+            font-size: 1.15rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .date,
+        .leave-type {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

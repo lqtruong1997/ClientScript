@@ -1,0 +1,99 @@
+.home {
+    .remaining-day {
+        margin-right: 0.9rem;
+    }
+    .list {
+        .expansion {
+            .expansion-detail {
+                border-bottom: 1px solid $grey;
+            }
+        }
+        .expansion:last-child {
+            .expansion-detail {
+                border-bottom: none;
+            }
+        }
+    }
+    .expansion {
+        margin: 0;
+        width: 100%;
+        box-shadow: none;
+        .body {
+            color: $grey-dark;
+            margin-bottom: 0.7rem;
+        }
+        &:before {
+            opacity: 0;
+        }
+        .text {
+            font-size: 1rem;
+        }
+        .heading {
+            padding: 0;
+            * {
+                padding: 0;
+            }
+        }
+        .expansion-detail {
+            padding: 0;
+        }
+    }
+    [class*="MuiExpansionPanelSummary-expandIcon"][class*="MuiExpansionPanelSummary-expanded"] {
+        transform: translateY(-50%) rotate(90deg);
+    }
+    .card {
+        margin-bottom: 0.8rem;
+    }
+    .holiday-card {
+        [class*="MuiExpansionPanelSummary-expandIcon"] {
+            right: -0.4rem;
+        }
+        .card-name {
+            margin-bottom: 0;
+        }
+
+        .heading {
+            min-height: 6.8rem;
+            max-height: 6.8rem;
+        }
+        .divider {
+            width: 100%;
+        }
+    }
+    .team-leave-card {
+        .card-name {
+            margin-bottom: 0;
+        }
+        [class*="MuiExpansionPanelSummary-expandIcon"] {
+            right: auto;
+            left: -0.4rem;
+        }
+
+        .heading {
+            max-height: 3rem;
+            min-height: 3rem;
+            p,
+            svg {
+                color: $grey;
+            }
+        }
+        .text {
+            padding-left: 1rem;
+        }
+        .divider {
+            width: 100%;
+            border-bottom: 1px solid $grey-light;
+        }
+        [class*="MuiExpansionPanelSummary-expanded"] {
+            p,
+            svg {
+                color: $grey-dark;
+            }
+        }
+    }
+    .group {
+        .detail {
+            width: calc(100% - 3.5rem);
+        }
+    }
+}
