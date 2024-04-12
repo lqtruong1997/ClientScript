@@ -13,7 +13,7 @@ class App extends React.Component {
                     <Route exact path="/" component={Login} />
                     <Route path="/leave-dashboard" component={Dashboard} />
                     <Route path="/leave-request" component={LeaveRequest} />
-                </Switch>
+                 </Switch>
             </Router>
         );
     }
